@@ -15,8 +15,8 @@ namespace UserContrlMenu
         public Menu()
         {
             InitializeComponent();
-            HideAll();
-            ventasView1.Show();
+           
+           
             
         }
 
@@ -25,19 +25,17 @@ namespace UserContrlMenu
 
             HideAll();
             btn_ventas.BackColor = Color.AliceBlue;
-            ventasView1.Show();
+            
         }
 
         private void HideAll()
         {
-            colaboradoresView1.Hide();
-            ventasView1.Hide();
-            inventarioView1.Hide();
+            
 
             btn_ventas.BackColor = Color.FromName("ControlLight");
             btn_colaboradores.BackColor = Color.FromName("ControlLight");
             btn_inventario.BackColor = Color.FromName("ControlLight");
-            //btn_colaboradores.BackColor = Color.LightCoral;
+           
         }
 
         private void btn_inventario_Click(object sender, EventArgs e)
@@ -45,14 +43,16 @@ namespace UserContrlMenu
 
             HideAll();
             btn_inventario.BackColor = Color.AliceBlue;
-            inventarioView1.Show();
+            
         }
 
         private void btn_colaboradores_Click(object sender, EventArgs e)
         {
+            // quita el color de el bton seleccionado antes 
             HideAll();
+            // establece el color de selccionado
             btn_colaboradores.BackColor = Color.AliceBlue;
-            colaboradoresView1.Show();
+           
         }
     }
 }

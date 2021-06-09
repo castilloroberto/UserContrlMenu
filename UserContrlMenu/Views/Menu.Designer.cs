@@ -34,12 +34,7 @@ namespace UserContrlMenu
             this.btn_inventario = new System.Windows.Forms.Button();
             this.btn_ventas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ventasView1 = new UserContrlMenu.Views.VentasView();
-            this.inventarioView1 = new UserContrlMenu.Views.InventarioView();
-            this.colaboradoresView1 = new UserContrlMenu.Views.ColaboradoresView();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,49 +102,16 @@ namespace UserContrlMenu
             this.label1.TabIndex = 0;
             this.label1.Text = "Menu";
             // 
-            // ventasView1
-            // 
-            this.ventasView1.Location = new System.Drawing.Point(3, 0);
-            this.ventasView1.Name = "ventasView1";
-            this.ventasView1.Size = new System.Drawing.Size(1230, 551);
-            this.ventasView1.TabIndex = 1;
-            // 
-            // inventarioView1
-            // 
-            this.inventarioView1.Location = new System.Drawing.Point(3, 3);
-            this.inventarioView1.Name = "inventarioView1";
-            this.inventarioView1.Size = new System.Drawing.Size(1261, 614);
-            this.inventarioView1.TabIndex = 2;
-            // 
-            // colaboradoresView1
-            // 
-            this.colaboradoresView1.Location = new System.Drawing.Point(3, 3);
-            this.colaboradoresView1.Name = "colaboradoresView1";
-            this.colaboradoresView1.Size = new System.Drawing.Size(1204, 593);
-            this.colaboradoresView1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.ventasView1);
-            this.panel2.Controls.Add(this.inventarioView1);
-            this.panel2.Controls.Add(this.colaboradoresView1);
-            this.panel2.Location = new System.Drawing.Point(12, 131);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1296, 643);
-            this.panel2.TabIndex = 4;
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 786);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Menu";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -161,10 +123,6 @@ namespace UserContrlMenu
         private System.Windows.Forms.Button btn_inventario;
         private System.Windows.Forms.Button btn_ventas;
         private System.Windows.Forms.Label label1;
-        private Views.VentasView ventasView1;
-        private Views.InventarioView inventarioView1;
-        private Views.ColaboradoresView colaboradoresView1;
-        private System.Windows.Forms.Panel panel2;
     }
 }
 
